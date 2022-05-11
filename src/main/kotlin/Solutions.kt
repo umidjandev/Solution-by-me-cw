@@ -1,6 +1,7 @@
 fun main() {
+
     class SmallestIntegerFinder {
-       fun findSmallestInt(nums: List<Int>): Int {
+        fun findSmallestInt(nums: List<Int>): Int {
            return nums.minOrNull()!!
         }
         /**
@@ -17,6 +18,14 @@ fun main() {
     }
     fun repeatStr(r: Int, str: String) : String{
       return str.repeat(r)
+    }
+
+    fun abbrevName(name:String): String {
+        var array = name.uppercase().split(" ")
+        return array[0].get(0)+ "." + array[1].get(0)
+    }
+    fun litres(time: Double): Int {
+        return time.toInt()/2
     }
 
 }
